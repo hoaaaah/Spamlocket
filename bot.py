@@ -2,7 +2,7 @@ from telegram import Update
 from telegram.ext import ApplicationBuilder, CommandHandler, ContextTypes
 from zz import spam  # Lấy hàm spam từ zz.py
 
-BOT_TOKEN = ("7864938791:AAGk6Lkp4uzHvOFp_4K-kywqqNovkWTw790")  # ← THAY bằng token bot của bạn
+BOT_TOKEN = ("7864938791:AAGk6Lkp4uzHvOFp_4K-kywqqNovkWTw790").build()  # ← THAY bằng token bot của bạn
 AUTHOR_NAME = "Tên tác giả của bạn"
 
 async def menu(update: Update, context: ContextTypes.DEFAULT_TYPE):
