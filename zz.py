@@ -1,11 +1,4 @@
-# ==================================
-#!/usr/bin/env python
-# coding: utf-8
-# Telegram: @wus_team
-# Version: 1.0.7
-# Github: https://github.com/wusthanhdieu
-# Description: zLocket Tool Open Source
-# ==================================
+
 import sys
 import platform
 if platform.python_version() < "3.12":
@@ -1403,3 +1396,9 @@ def main():
 if __name__=="__main__":
     config=zLocket()
     main()
+    # zz.py
+
+def spam(url, threads, message):
+    print(f"Spamming {url} với {threads} luồng và tin nhắn: {message}")
+    # ==== GỌI CODE SPAM CỦA BẠN TẠI ĐÂY ====
+    # Ví dụ: chạy request, gửi dữ liệu, tạo nhiều thread...
