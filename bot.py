@@ -4,6 +4,8 @@ from zz import spam  # Lấy hàm spam từ zz.py
 
 BOT_TOKEN = "7864938791:AAGk6Lkp4uzHvOFp_4K-kywqqNovkWTw790"  # ← THAY bằng token bot của bạn
 AUTHOR_NAME = "KHANHH HUYENN"
+...
+f"👤 Bot được tạo bởi: {AUTHOR_NAME}\n"
 
 async def menu(update: Update, context: ContextTypes.DEFAULT_TYPE):
     await update.message.reply_text(
