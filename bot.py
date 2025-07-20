@@ -3,16 +3,13 @@ from telegram.ext import ApplicationBuilder, CommandHandler, ContextTypes
 from zz import spam  # Lấy hàm spam từ zz.py
 
 BOT_TOKEN = "7864938791:AAGk6Lkp4uzHvOFp_4K-kywqqNovkWTw790"  # ← THAY bằng token bot của bạn
-AUTHOR_NAME = "KHANHH HUYENN"
-...
-f"👤 Bot được tạo bởi: {AUTHOR_NAME}\n"
+AUTHOR_NAME = "Tên tác giả của bạn"
 
 async def menu(update: Update, context: ContextTypes.DEFAULT_TYPE):
     await update.message.reply_text(
-        f"👤 Bot được tạo bởi: KHANHH HUYENN\n"
+        f"👤 Bot được tạo bởi: {AUTHOR_NAME}\n"
         "📜 Lệnh: /Locket spam [url] [số luồng] [tin nhắn]"
     )
-
 async def locket(update: Update, context: ContextTypes.DEFAULT_TYPE):
     args = context.args
     if len(args) < 4 or args[0].lower() != "spam":
