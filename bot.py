@@ -2,8 +2,8 @@ from telegram import Update
 from telegram.ext import ApplicationBuilder, CommandHandler, ContextTypes
 from zz import spam  # Lấy hàm spam từ zz.py
 
-app = ApplicationBuilder().token("7864938791:AAGk6Lkp4uzHvOFp_4K-kywqqNovkWTw790").build()
-AUTHOR_NAME = "Tên tác giả của bạn"
+BOT_TOKEN = "7864938791:AAGk6Lkp4uzHvOFp_4K-kywqqNovkWTw790"  # ← THAY bằng token bot của bạn
+AUTHOR_NAME = "KHANHH HUYENN"
 
 async def menu(update: Update, context: ContextTypes.DEFAULT_TYPE):
     await update.message.reply_text(
@@ -30,7 +30,7 @@ async def locket(update: Update, context: ContextTypes.DEFAULT_TYPE):
 async def ag(update: Update, context: ContextTypes.DEFAULT_TYPE):
     await update.message.reply_text("✅ Lệnh /ag đã được kích hoạt!")
 
-app = ApplicationBuilder().token(7864938791:AAGk6Lkp4uzHvOFp_4K-kywqqNovkWTw790).build()
+app = ApplicationBuilder().token("7864938791:AAGk6Lkp4uzHvOFp_4K-kywqqNovkWTw790").build()
 app.add_handler(CommandHandler("menu", menu))
 app.add_handler(CommandHandler("Locket", locket))
 app.add_handler(CommandHandler("ag", ag))
