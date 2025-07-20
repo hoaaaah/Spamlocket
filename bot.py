@@ -7,7 +7,7 @@ AUTHOR_NAME = "KHANHH HUYENN"
 
 async def menu(update: Update, context: ContextTypes.DEFAULT_TYPE):
     await update.message.reply_text(
-        f"👤 Bot được tạo bởi: {KHANHH HUYENN}\n"
+        f"👤 Bot được tạo bởi: KHANHH HUYENN\n"
         "📜 Lệnh: /Locket spam [url] [số luồng] [tin nhắn]"
     )
 
